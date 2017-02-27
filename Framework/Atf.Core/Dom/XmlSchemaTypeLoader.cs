@@ -1078,7 +1078,7 @@ namespace Sce.Atf.Dom
     /// <summary>
     /// A rule to allow the use of the schema 'substitutionGroup'.
     /// http://www.w3schools.com/schema/schema_complex_subst.asp  </summary>
-    internal class SubstitutionGroupChildRule : ChildRule
+    public class SubstitutionGroupChildRule : ChildRule
     {
         private readonly ChildInfo[] m_substitutions;
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sce.Atf.Applications</RootNamespace>
     <AssemblyName>Atf.IronPython</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -23,6 +23,7 @@
     <DefineConstants>TRACE;DEBUG;CS_4</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,6 +35,7 @@
     <DocumentationFile>
     </DocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="IronPython, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
@@ -63,17 +65,17 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Atf.Core\Atf.Core.vs2010.csproj">
+    <ProjectReference Include="..\Atf.Core\Atf.Core.vs2015.csproj">
       <Project>{9D1835B6-D1C2-44BA-BAE1-05C6EC442D2F}</Project>
-      <Name>Atf.Core.vs2010</Name>
+      <Name>Atf.Core.vs2015</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Atf.Gui.WinForms\Atf.Gui.WinForms.vs2010.csproj">
+    <ProjectReference Include="..\Atf.Gui.WinForms\Atf.Gui.WinForms.vs2015.csproj">
       <Project>{7C36A258-9102-420D-B80A-5EB5717644B6}</Project>
-      <Name>Atf.Gui.WinForms.vs2010</Name>
+      <Name>Atf.Gui.WinForms.vs2015</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Atf.Gui\Atf.Gui.vs2010.csproj">
+    <ProjectReference Include="..\Atf.Gui\Atf.Gui.vs2015.csproj">
       <Project>{4765C2A7-F989-40DB-BC12-FCD67025B93F}</Project>
-      <Name>Atf.Gui.vs2010</Name>
+      <Name>Atf.Gui.vs2015</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

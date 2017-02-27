@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sce.Atf</RootNamespace>
     <AssemblyName>Atf.Gui.WinForms</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -25,6 +25,7 @@
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <NoWarn>649</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,6 +37,7 @@
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <NoWarn>649</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -626,13 +628,13 @@
     <Compile Include="WinFormsUtil.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Atf.Core\Atf.Core.vs2010.csproj">
+    <ProjectReference Include="..\Atf.Core\Atf.Core.vs2015.csproj">
       <Project>{9D1835B6-D1C2-44BA-BAE1-05C6EC442D2F}</Project>
-      <Name>Atf.Core.vs2010</Name>
+      <Name>Atf.Core.vs2015</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Atf.Gui\Atf.Gui.vs2010.csproj">
+    <ProjectReference Include="..\Atf.Gui\Atf.Gui.vs2015.csproj">
       <Project>{4765C2A7-F989-40DB-BC12-FCD67025B93F}</Project>
-      <Name>Atf.Gui.vs2010</Name>
+      <Name>Atf.Gui.vs2015</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
